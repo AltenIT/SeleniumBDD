@@ -1,0 +1,93 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "# language: en"
+      }
+    ],
+    "line": 3,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 4273438,
+              "status": "passed"
+            },
+            "match": {
+              "location": "StepsDefinition.initialize()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Visit the shoppingcart website",
+        "description": "",
+        "id": "workflow;visit-the-shoppingcart-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3759823383,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i navigate to the shoppingcart website",
+            "match": {
+              "location": "StepsDefinition.iNavigateToTheShoppingcartWebsite()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 230448338,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i click home",
+            "match": {
+              "location": "StepsDefinition.iClickOnHome()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 57452159,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i want to see the description of the website",
+            "match": {
+              "location": "StepsDefinition.iWantToSeeTheDescriptionOfTheWebsite()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 116509738,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "i want to see if the Alten logo is visible",
+            "match": {
+              "location": "StepsDefinition.iWantToSeeIfTheAltenLogiIsVisible()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@Scenario1"
+          }
+        ]
+      }
+    ],
+    "name": "Workflow",
+    "description": "Visit the shoppingcart website",
+    "id": "workflow",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Cucumber/workflow.feature"
+  }
+]
