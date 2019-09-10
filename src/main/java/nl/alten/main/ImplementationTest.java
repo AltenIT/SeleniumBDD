@@ -5,6 +5,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import java.util.List;
+
 public class ImplementationTest {
      public static WebDriver driver;
 
@@ -13,7 +15,11 @@ public class ImplementationTest {
           driver.navigate().to("http://localhost:8090/shoppingcart/");
      }
 
-     public void ClickHome() {
+     public void CloseShoppingCart() {
+          driver.close();
+     }
+
+     public void ClickMenuHome() {
           WebElement element = driver.findElement(By.xpath("//*[@id=\'collapsingNavbar\']/ul/li[1]/a"));
           element.click();
      }
@@ -25,8 +31,8 @@ public class ImplementationTest {
           }
      }
 
-     public void ValidateText(By element, String expected) {
-          String actual = driver.findElement(element).getText();
-               Assert.assertEquals(actual, expected);
+     public void ValidateText(String expected) {
+          String actual = driver.findElement(By.xpath("//*[@id='mainSection']/ng-view/header/h1")).getText();
+          Assert.assertEquals(actual, expected);
      }
 }

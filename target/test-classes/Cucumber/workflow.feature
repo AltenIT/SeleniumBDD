@@ -3,7 +3,7 @@
 Feature: Workflow
   Visit the shoppingcart website
 
-  @Scenario1
+  @ScenarioExample
   Scenario: Visit the shoppingcart website
     Given i navigate to the shoppingcart website
     When i click home
