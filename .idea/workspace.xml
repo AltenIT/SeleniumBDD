@@ -3,11 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="c2940be1-3e16-4afd-a6f9-77db1c37e8ca" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver" beforeDir="false" afterPath="$PROJECT_DIR$/chromedriver" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/nl/alten/main/ImplementationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/nl/alten/main/ImplementationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/StepsDefinition/StepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsDefinition/StepsDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/runnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/runnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Cucumber/workflow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Cucumber/workflow.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/nl/alten/main/ImplementationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alten/main/ImplementationTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-html-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-report/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Cucumber/workflow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Cucumber/workflow.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/StepsDefinition/StepsDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepsDefinition/StepsDefinition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/runnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/runnerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
