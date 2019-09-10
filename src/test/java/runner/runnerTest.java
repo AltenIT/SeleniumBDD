@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/Cucumber/workflow.feature",
         glue = "StepsDefinition",
-        tags= "@Scenario4",
+        tags= "@Scenario5",
         plugin={"html:target/cucumber-html-report"}
 )
 

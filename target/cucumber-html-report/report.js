@@ -13,11 +13,11 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 3163128,
+  "duration": 1400553,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3179725010,
+  "duration": 3112897618,
   "status": "passed"
 });
 formatter.scenario({
@@ -63,39 +63,49 @@ formatter.match({
   "location": "StepsDefinition.iWantToAddTheImportedProductPill()"
 });
 formatter.result({
-  "duration": 379711200,
+  "duration": 404090409,
   "status": "passed"
 });
 formatter.match({
   "location": "StepsDefinition.iTryToAddTheProductPill()"
 });
 formatter.result({
-  "duration": 112587527,
+  "duration": 94910728,
   "status": "passed"
 });
 formatter.match({
   "location": "StepsDefinition.iExpectTheProductToBeAddedWithTheRightAmountAndTheProduct()"
 });
 formatter.result({
-  "duration": 64607182,
+  "duration": 56301077,
   "status": "passed"
 });
 formatter.match({
   "location": "StepsDefinition.iExpectToSeeTheAmountOfProductImportedPriceAndPriceWithTax()"
 });
 formatter.result({
-  "duration": 252218401,
+  "duration": 267793840,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepsDefinition.iWantToValidateIfTheTotalTaxIsPercentAndTheTotalPriceIs()"
+  "arguments": [
+    {
+      "val": "Totaal belasting: 0.55",
+      "offset": 39
+    },
+    {
+      "val": "Totaal prijs: 10.64",
+      "offset": 85
+    }
+  ],
+  "location": "StepsDefinition.iWantToValidateIfTheTotalTaxIsTotaal_taxAndTheTotalPriceIsTotaal_price(String,String)"
 });
 formatter.result({
-  "duration": 89659839,
+  "duration": 89923633,
   "status": "passed"
 });
 formatter.after({
-  "duration": 149088375,
+  "duration": 125755908,
   "status": "passed"
 });
 });

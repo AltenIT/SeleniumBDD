@@ -115,9 +115,26 @@ public class StepsDefinition {
         imp.ValidateRapportItemPrijsMetBelasting(1, "10.64");
     }
 
-    @And("i want to validate if the total tax is Totaal belasting: 0.55 and the total price is Totaal prijs: 10.64$")
-    public void iWantToValidateIfTheTotalTaxIsPercentAndTheTotalPriceIs() {
-        imp.Totaltax("Totaal belasting: 0.55");
-        imp.Totalprice("Totaal prijs: 10.64");
+//    @And("i want to validate if the total tax is Totaal belasting: 0.55 and the total price is Totaal prijs: 10.64$")
+//    public void iWantToValidateIfTheTotalTaxIsPercentAndTheTotalPriceIs() {
+//        imp.Totaltax("Totaal belasting: 0.55");
+//        imp.Totalprice("Totaal prijs: 10.64");
+//    }
+
+    // Scenario 5
+    @And("^i expect to see on the line (.*) the amount (.*) of product, the description (.*), imported (.*), price (.*), price with tax (.*), total tax (.*) and total price (.*)$")
+    public void iExpectToSeeOnTheLineLineTheAmountAmountOfProductTheDescriptionProduct_descriptionImportedImportedPricePricePriceWithTaxPrice_with_taxTotalTaxTotal_taxAndTotalPriceTotal_price(int line, String amount, String product_description, String imported, String price, String price_with_tax, String total_tax, String total_price) {
+        imp.ClickMenu("Rapport");
+        imp.ValidateRapportItemAantal(line, amount);
+        imp.ValidateRapportItemProduct(line, product_description);
+        imp.ValidateRapportItemImport(line, "true");
+        imp.ValidateRapportItemPrijs(line, price);
+        imp.ValidateRapportItemPrijsMetBelasting(line, price_with_tax);
+    }
+
+    @And("^i want to validate if the total tax is (.*) and the total price is (.*)$")
+    public void iWantToValidateIfTheTotalTaxIsTotaal_taxAndTheTotalPriceIsTotaal_price(String totaal_tax, String total_price) {
+        imp.Totaltax(totaal_tax);
+        imp.Totalprice(total_price);
     }
 }
