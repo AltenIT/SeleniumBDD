@@ -106,4 +106,40 @@ public class ImplementationTest {
                Assert.fail("The imported product has not been shown");
           }
      }
+
+     // Scenario 4
+     public void ValidateRapportItemAantal(int regel, String waarde) {
+          String aantal = driver.findElement(By.xpath("//tbody/tr[\"+regel+\"]//td[1][contains(text(), '"+waarde+"')]")).getText();
+          Assert.assertEquals(aantal, waarde);
+     }
+
+     public void ValidateRapportItemProduct(int regel, String waarde) {
+          String product = driver.findElement(By.xpath("//tbody/tr[\"+regel+\"]//td[2][contains(text(), '"+waarde+"')]")).getText();
+          Assert.assertEquals(product, waarde);
+     }
+
+     public void ValidateRapportItemImport(int regel, String waarde) {
+          String imported = driver.findElement(By.xpath("//tbody/tr[\"+regel+\"]//td[3][contains(text(), '"+waarde+"')]")).getText();
+          Assert.assertEquals(imported, waarde);
+     }
+
+     public void ValidateRapportItemPrijs(int regel, String waarde) {
+          String prijs = driver.findElement(By.xpath("//tbody/tr[\"+regel+\"]//td[4][contains(text(), '"+waarde+"')]")).getText();
+          Assert.assertEquals(prijs, waarde);
+     }
+
+     public void ValidateRapportItemPrijsMetBelasting(int regel, String waarde) {
+          String prijsmetbelasting = driver.findElement(By.xpath("//tbody/tr[\"+regel+\"]//td[5][contains(text(), '"+waarde+"')]")).getText();
+          Assert.assertEquals(prijsmetbelasting, waarde);
+     }
+
+     public void Totaltax(String tax) {
+          String totaltax = driver.findElement(By.xpath("//span[@id='TotaalbelastingID']")).getText();
+          Assert.assertEquals(totaltax, tax);
+     }
+
+     public void Totalprice(String price) {
+          String totalprice = driver.findElement(By.xpath("//span[@id='TotaalprijsID']")).getText();
+          Assert.assertEquals(totalprice, price);
+     }
 }

@@ -32,3 +32,11 @@ Feature: Workflow
       |  Pill   | 1 Geïmporteerde Pill ter waarde van 10.09   |
       |  Parfum | 1 Geïmporteerde Parfum ter waarde van 50.55 |
       |  Boek   | 1 Geïmporteerde boek ter waarde van 21.27   |
+
+  @Scenario4
+  Scenario: The imported product Pill must be added and show the right price, amount, product, imported, the price and the price with tax
+    Given i want to add the imported product Pill
+    When i try to add the product Pill
+    Then i expect the product pill to be added with the right amount and the product
+    And i expect to see the amount of product, imported, price and price with tax
+    And i want to validate if the total tax is Totaal belasting: 0.55 and the total price is Totaal prijs: 10.64

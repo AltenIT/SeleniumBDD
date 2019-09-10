@@ -98,4 +98,26 @@ public class StepsDefinition {
         imp.ValidatePopupProduct(PopupMessage);
     }
 
+
+    // Scenario 4
+    @When("^i try to add the product$")
+    public void iTryToAddTheProduct1() {
+        imp.AddProduct("product_pill_toevoegen");
+    }
+
+    @And("^i expect to see the amount of product, imported, price and price with tax$")
+    public void iExpectToSeeTheAmountOfProductImportedPriceAndPriceWithTax() {
+        imp.ClickMenu("Rapport");
+        imp.ValidateRapportItemAantal(1, "1");
+        imp.ValidateRapportItemProduct(1, "imported pills");
+        imp.ValidateRapportItemImport(1, "true");
+        imp.ValidateRapportItemPrijs(1,"10.09");
+        imp.ValidateRapportItemPrijsMetBelasting(1, "10.64");
+    }
+
+    @And("i want to validate if the total tax is Totaal belasting: 0.55 and the total price is Totaal prijs: 10.64$")
+    public void iWantToValidateIfTheTotalTaxIsPercentAndTheTotalPriceIs() {
+        imp.Totaltax("Totaal belasting: 0.55");
+        imp.Totalprice("Totaal prijs: 10.64");
+    }
 }
