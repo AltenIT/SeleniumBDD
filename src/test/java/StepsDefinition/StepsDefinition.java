@@ -43,4 +43,22 @@ public class StepsDefinition {
     public void iWantToSeeIfTheAltenLogiIsVisible() {
         imp.ValidateAltenLogo();
     }
+
+
+    // Scenario 1
+    @Given("^i want to add the imported product Pill$")
+    public void iWantToAddTheImportedProductPill() {
+        imp.ClickMenuShop();
+        imp.ValidatePill();
+    }
+
+    @When("^i try to add the product Pill$")
+    public void iTryToAddTheProductPill() {
+        imp.AddProductPill();
+    }
+
+    @Then("^i expect the product pill to be added with the right amount and the product$")
+    public void iExpectTheProductToBeAddedWithTheRightAmountAndTheProduct() {
+        imp.ValidatePopupProductPill();
+    }
 }

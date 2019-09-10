@@ -13,77 +13,65 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1976449,
+  "duration": 1862567,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3134029097,
+  "duration": 5233620801,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 7,
-  "name": "Visit the shoppingcart website",
+  "line": 14,
+  "name": "The imported product Pill must be added",
   "description": "",
-  "id": "workflow;visit-the-shoppingcart-website",
+  "id": "workflow;the-imported-product-pill-must-be-added",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 6,
-      "name": "@ScenarioExample"
+      "line": 13,
+      "name": "@Scenario1"
     }
   ]
 });
 formatter.step({
-  "line": 8,
-  "name": "i navigate to the shoppingcart website",
+  "line": 15,
+  "name": "i want to add the imported product Pill",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 9,
-  "name": "i click home",
+  "line": 16,
+  "name": "i try to add the product Pill",
   "keyword": "When "
 });
 formatter.step({
-  "line": 10,
-  "name": "i want to see the description of the website",
+  "line": 17,
+  "name": "i expect the product pill to be added with the right amount and the product",
   "keyword": "Then "
 });
-formatter.step({
-  "line": 11,
-  "name": "i want to see if the Alten logo is visible",
-  "keyword": "And "
-});
 formatter.match({
-  "location": "StepsDefinition.iNavigateToTheShoppingcartWebsite()"
+  "location": "StepsDefinition.iWantToAddTheImportedProductPill()"
 });
 formatter.result({
-  "duration": 1994009926,
+  "duration": 523077454,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepsDefinition.iClickOnHome()"
+  "location": "StepsDefinition.iTryToAddTheProductPill()"
 });
 formatter.result({
-  "duration": 145186487,
+  "duration": 137473215,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepsDefinition.iWantToSeeTheDescriptionOfTheWebsite()"
+  "location": "StepsDefinition.iExpectTheProductToBeAddedWithTheRightAmountAndTheProduct()"
 });
 formatter.result({
-  "duration": 49799629,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepsDefinition.iWantToSeeIfTheAltenLogiIsVisible()"
-});
-formatter.result({
-  "duration": 93125755,
+  "duration": 72755151,
   "status": "passed"
 });
 formatter.after({
-  "duration": 146312378,
+  "duration": 231637436,
   "status": "passed"
 });
 });

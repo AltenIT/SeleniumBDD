@@ -8,17 +8,6 @@
       <change beforePath="$PROJECT_DIR$/src/test/java/StepsDefinition/StepsDefinition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepsDefinition/StepsDefinition.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runner/runnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runner/runnerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/Cucumber/workflow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Cucumber/workflow.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/SeleniumBDD.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/nl/alten/main/ImplementationTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/nl/alten/main/ImplementationTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/cucumber-html-report/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-html-report/report.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.runnerTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-runner.runnerTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/runner.runnerTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/runner.runnerTest.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Cucumber/workflow.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Cucumber/workflow.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/META-INF/SeleniumBDD.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/StepsDefinition/StepsDefinition.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/StepsDefinition/StepsDefinition.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/runner/runnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/runner/runnerTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

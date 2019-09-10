@@ -35,4 +35,30 @@ public class ImplementationTest {
           String actual = driver.findElement(By.xpath("//*[@id='mainSection']/ng-view/header/h1")).getText();
           Assert.assertEquals(actual, expected);
      }
+
+
+     // Scenario 1
+     public void ClickMenuShop() {
+          WebElement element = driver.findElement(By.partialLinkText("Shop"));
+          element.click();
+     }
+
+     public void ValidatePill() {
+          WebElement element = driver.findElement(By.xpath("//div[@class='card-columns']//h4[contains(text(), 'Pill')]"));
+          if (!element.isDisplayed()) {
+               Assert.fail("The element Pill doesn't exists");
+          }
+     }
+
+     public void AddProductPill() {
+          WebElement element = driver.findElement(By.xpath("//div[@class='card-columns']//button[@id='product_pills_toevoegen']"));
+          element.click();
+     }
+
+     public void  ValidatePopupProductPill() {
+          WebElement element = driver.findElement(By.xpath("//span[@id='productSpan'][contains(text(), '1 Geïmporteerde Pill ter waarde van 10.09')]"));
+          if (!element.isDisplayed()) {
+               Assert.fail("1 Geïmporteerde Pill ter waarde van 10.09 has not been shown");
+          }
+     }
 }
