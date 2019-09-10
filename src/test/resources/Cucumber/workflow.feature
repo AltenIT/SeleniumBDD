@@ -21,3 +21,14 @@ Feature: Workflow
     Given i want to add the imported product Boek
     When i try to add the product Boek
     Then i expect the product boek to be added with the right amount and the product
+
+  @Scenario3
+  Scenario Outline: All of the imported product must be added and must show the right product and price
+    Given i want to add the selected imported product <product>
+    When i try to add the selected imported product <product>
+    Then i expect the product to be added with the following <popup_message>
+    Examples:
+      | product | popup_message                               |
+      |  Pill   | 1 Geïmporteerde Pill ter waarde van 10.09   |
+      |  Parfum | 1 Geïmporteerde Parfum ter waarde van 50.55 |
+      |  Boek   | 1 Geïmporteerde boek ter waarde van 21.27   |

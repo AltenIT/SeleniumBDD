@@ -82,4 +82,28 @@ public class ImplementationTest {
                Assert.fail("1 Geïmporteerde Pill ter waarde van 10.09 has not been shown");
           }
      }
+
+
+     // scenario 3
+     public void ClickMenu(String menu) {
+          WebElement element = driver.findElement(By.partialLinkText(menu));
+          element.click();
+     }
+
+     public void ValidateProduct(String product) {
+          String actual = driver.findElement(By.xpath("//h4[@class='card-title'][contains(text(), '"+product+"')]")).getText();
+          Assert.assertEquals(actual, product);
+     }
+
+     public void AddProduct(String product) {
+          WebElement element = driver.findElement(By.xpath("//div[@class='card-body']//h4[contains(text(), '"+product+"')]/..//button"));
+          element.click();
+     }
+
+     public void ValidatePopupProduct(String popup) {
+          WebElement element = driver.findElement(By.xpath("//span[@id='productSpan'][contains(text(), '"+popup+"')]"));
+          if (!element.isDisplayed()) {
+               Assert.fail("The imported product has not been shown");
+          }
+     }
 }
