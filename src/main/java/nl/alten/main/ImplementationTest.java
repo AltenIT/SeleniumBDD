@@ -142,4 +142,17 @@ public class ImplementationTest {
           String totalprice = driver.findElement(By.xpath("//span[@id='TotaalprijsID']")).getText();
           Assert.assertEquals(totalprice, price);
      }
+
+     // Scenario 6
+     public void DeleteProduct() {
+          WebElement element = driver.findElement(By.xpath("//tr[@ng-repeat]//td/img"));
+          element.click();
+     }
+
+     public void ValidateRemovedItem(String product) {
+          if (!driver.findElements(By.xpath("//tr/td[@class][contains(text(), '" + product + "')]")).isEmpty()) {
+               Assert.fail("The product has not been removed");
+          }
+     }
+
 }

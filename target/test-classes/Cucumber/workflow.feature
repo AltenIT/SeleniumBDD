@@ -53,3 +53,15 @@ Feature: Workflow
       |  Pill   | 1 Geïmporteerde Pill ter waarde van 10.09   |    imported pills  |   1  |    1   |   true   |  10.09 |     10.64      |  Totaal belasting: 0.55     | Totaal prijs: 10.64       |
       |  Parfum | 1 Geïmporteerde Parfum ter waarde van 50.55 |   imported Perfume |   1  |    1   |   true   |  50.55 |     58.14      |  Totaal belasting: 7.59     | Totaal prijs: 58.14       |
       |  Boek   | 1 Geïmporteerde boek ter waarde van 21.27   |   imported Book    |   1  |    1   |   true   |  21.27 |     22.37      |  Totaal belasting: 1.10     | Totaal prijs: 22.37       |
+
+  @Scenario6
+  Scenario Outline: The imported products must be deleted and the price must be removed
+    Given i try to add the imported product <product>
+    When i try to delete the imported product in rapport
+    Then i expect the product <imported_product> to be removed
+    And i expect the total price to be <total_price>
+    Examples:
+      | product | imported_product | total_price               |
+      |  Pill   | imported pills   |  Totaal prijs: 0.00       |
+      |  Parfum | imported Parfume |  Totaal prijs: 0.00       |
+      |  Boek   | imported Book    |  Totaal prijs: 0.00       |

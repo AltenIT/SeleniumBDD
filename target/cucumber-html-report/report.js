@@ -12,100 +12,86 @@ formatter.feature({
   "id": "workflow",
   "keyword": "Feature"
 });
-formatter.before({
-  "duration": 1400553,
-  "status": "passed"
-});
-formatter.before({
-  "duration": 3112897618,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 37,
-  "name": "The imported product Pill must be added and show the right price, amount, product, imported, the price and the price with tax",
+formatter.scenarioOutline({
+  "line": 58,
+  "name": "The imported products must be deleted and the price must be removed",
   "description": "",
-  "id": "workflow;the-imported-product-pill-must-be-added-and-show-the-right-price,-amount,-product,-imported,-the-price-and-the-price-with-tax",
-  "type": "scenario",
-  "keyword": "Scenario",
+  "id": "workflow;the-imported-products-must-be-deleted-and-the-price-must-be-removed",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
   "tags": [
     {
-      "line": 36,
-      "name": "@Scenario4"
+      "line": 57,
+      "name": "@Scenario6"
     }
   ]
 });
 formatter.step({
-  "line": 38,
-  "name": "i want to add the imported product Pill",
+  "line": 59,
+  "name": "i try to add the imported product \u003cproduct\u003e",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 39,
-  "name": "i try to add the product Pill",
+  "line": 60,
+  "name": "i try to delete the imported product in rapport",
   "keyword": "When "
 });
 formatter.step({
-  "line": 40,
-  "name": "i expect the product pill to be added with the right amount and the product",
+  "line": 61,
+  "name": "i expect the product \u003cimported_product\u003e to be removed",
   "keyword": "Then "
 });
 formatter.step({
-  "line": 41,
-  "name": "i expect to see the amount of product, imported, price and price with tax",
+  "line": 62,
+  "name": "i expect the total price to be \u003ctotal_price\u003e",
   "keyword": "And "
 });
-formatter.step({
-  "line": 42,
-  "name": "i want to validate if the total tax is Totaal belasting: 0.55 and the total price is Totaal prijs: 10.64",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "StepsDefinition.iWantToAddTheImportedProductPill()"
-});
-formatter.result({
-  "duration": 404090409,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepsDefinition.iTryToAddTheProductPill()"
-});
-formatter.result({
-  "duration": 94910728,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepsDefinition.iExpectTheProductToBeAddedWithTheRightAmountAndTheProduct()"
-});
-formatter.result({
-  "duration": 56301077,
-  "status": "passed"
-});
-formatter.match({
-  "location": "StepsDefinition.iExpectToSeeTheAmountOfProductImportedPriceAndPriceWithTax()"
-});
-formatter.result({
-  "duration": 267793840,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
+formatter.examples({
+  "line": 63,
+  "name": "",
+  "description": "",
+  "id": "workflow;the-imported-products-must-be-deleted-and-the-price-must-be-removed;",
+  "rows": [
     {
-      "val": "Totaal belasting: 0.55",
-      "offset": 39
+      "cells": [
+        "product",
+        "imported_product",
+        "total_price"
+      ],
+      "line": 64,
+      "id": "workflow;the-imported-products-must-be-deleted-and-the-price-must-be-removed;;1"
     },
     {
-      "val": "Totaal prijs: 10.64",
-      "offset": 85
+      "cells": [
+        "Pill",
+        "imported pills",
+        "Totaal prijs: 0.00"
+      ],
+      "line": 65,
+      "id": "workflow;the-imported-products-must-be-deleted-and-the-price-must-be-removed;;2"
+    },
+    {
+      "cells": [
+        "Parfum",
+        "imported Parfume",
+        "Totaal prijs: 0.00"
+      ],
+      "line": 66,
+      "id": "workflow;the-imported-products-must-be-deleted-and-the-price-must-be-removed;;3"
+    },
+    {
+      "cells": [
+        "Boek",
+        "imported Book",
+        "Totaal prijs: 0.00"
+      ],
+      "line": 67,
+      "id": "workflow;the-imported-products-must-be-deleted-and-the-price-must-be-removed;;4"
     }
   ],
-  "location": "StepsDefinition.iWantToValidateIfTheTotalTaxIsTotaal_taxAndTheTotalPriceIsTotaal_price(String,String)"
+  "keyword": "Examples"
 });
-formatter.result({
-  "duration": 89923633,
+formatter.before({
+  "duration": 2026948,
   "status": "passed"
-});
-formatter.after({
-  "duration": 125755908,
-  "status": "passed"
-});
 });

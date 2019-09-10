@@ -137,4 +137,27 @@ public class StepsDefinition {
         imp.Totaltax(totaal_tax);
         imp.Totalprice(total_price);
     }
+
+    // Scenario 6
+    @Given("^i try to add the imported product (.*)$")
+    public void iTryToAddTheImportedProduct(String product) {
+        imp.ClickMenu("Shop");
+        imp.AddProduct(product);
+    }
+
+    @When("^i try to delete the imported product in rapport$")
+    public void iTryToDeleteTheImportedProductImported_prodcutInRapport() {
+        imp.ClickMenu("Rapport");
+        imp.DeleteProduct();
+    }
+
+    @Then("^i expect the product (.*) to be removed$")
+    public void iExpectTheProductImported_productToBeRemoved(String product) {
+        imp.ValidateRemovedItem(product);
+    }
+
+    @And("^i expect the total price to be (.*)$")
+    public void iExpectTheTotalPriceToBeTotal_price(String price) {
+        imp.Totalprice(price);
+    }
 }
