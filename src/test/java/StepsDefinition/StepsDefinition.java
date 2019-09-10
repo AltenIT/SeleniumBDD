@@ -61,4 +61,22 @@ public class StepsDefinition {
     public void iExpectTheProductToBeAddedWithTheRightAmountAndTheProduct() {
         imp.ValidatePopupProductPill();
     }
+
+
+    // Scenario 2
+    @Given("^i want to add the imported product Boek$")
+    public void iWantToAddTheNonImportedProductCD() {
+        imp.ClickMenuShop();
+        imp.ValidateBoek();
+    }
+
+    @When("^i try to add the product Boek$")
+    public void iTryToAddTheProductBoek() {
+        imp.AddProductBoek();
+    }
+
+    @Then("^i expect the product boek to be added with the right amount and the product$")
+    public void iExpectTheProductCDToBeAddedWithTheRightAmountAndTheProduct() {
+        imp.ValidatePopupProductBoek();
+    }
 }

@@ -61,4 +61,25 @@ public class ImplementationTest {
                Assert.fail("1 Geïmporteerde Pill ter waarde van 10.09 has not been shown");
           }
      }
+
+
+     // Scenario 2
+     public void ValidateBoek() {
+          WebElement element = driver.findElement(By.xpath("//div[@class='card-columns']//h4[contains(text(), 'Boek')]"));
+          if (!element.isDisplayed()) {
+               Assert.fail("The element Boek doesn't exists");
+          }
+     }
+
+     public void AddProductBoek() {
+          WebElement element = driver.findElement(By.xpath("//div[@class='card-columns']//button[@id='product_boek_toevoegen']"));
+          element.click();
+     }
+
+     public void  ValidatePopupProductBoek() {
+          WebElement element = driver.findElement(By.xpath("//span[@id='productSpan'][contains(text(), '1 Geïmporteerde boek ter waarde van 21.27')]"));
+          if (!element.isDisplayed()) {
+               Assert.fail("1 Geïmporteerde Pill ter waarde van 10.09 has not been shown");
+          }
+     }
 }

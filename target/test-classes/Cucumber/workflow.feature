@@ -15,3 +15,9 @@ Feature: Workflow
     Given i want to add the imported product Pill
     When i try to add the product Pill
     Then i expect the product pill to be added with the right amount and the product
+
+  @Scenario2
+  Scenario: The imported product Boek must be added
+    Given i want to add the imported product Boek
+    When i try to add the product Boek
+    Then i expect the product boek to be added with the right amount and the product

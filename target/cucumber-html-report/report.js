@@ -13,65 +13,65 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 1862567,
+  "duration": 2021705,
   "status": "passed"
 });
 formatter.before({
-  "duration": 5233620801,
+  "duration": 2976670784,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 14,
-  "name": "The imported product Pill must be added",
+  "line": 20,
+  "name": "The imported product Boek must be added",
   "description": "",
-  "id": "workflow;the-imported-product-pill-must-be-added",
+  "id": "workflow;the-imported-product-boek-must-be-added",
   "type": "scenario",
   "keyword": "Scenario",
   "tags": [
     {
-      "line": 13,
-      "name": "@Scenario1"
+      "line": 19,
+      "name": "@Scenario2"
     }
   ]
 });
 formatter.step({
-  "line": 15,
-  "name": "i want to add the imported product Pill",
+  "line": 21,
+  "name": "i want to add the imported product Boek",
   "keyword": "Given "
 });
 formatter.step({
-  "line": 16,
-  "name": "i try to add the product Pill",
+  "line": 22,
+  "name": "i try to add the product Boek",
   "keyword": "When "
 });
 formatter.step({
-  "line": 17,
-  "name": "i expect the product pill to be added with the right amount and the product",
+  "line": 23,
+  "name": "i expect the product boek to be added with the right amount and the product",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "StepsDefinition.iWantToAddTheImportedProductPill()"
+  "location": "StepsDefinition.iWantToAddTheNonImportedProductCD()"
 });
 formatter.result({
-  "duration": 523077454,
+  "duration": 419116613,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepsDefinition.iTryToAddTheProductPill()"
+  "location": "StepsDefinition.iTryToAddTheProductBoek()"
 });
 formatter.result({
-  "duration": 137473215,
+  "duration": 123605241,
   "status": "passed"
 });
 formatter.match({
-  "location": "StepsDefinition.iExpectTheProductToBeAddedWithTheRightAmountAndTheProduct()"
+  "location": "StepsDefinition.iExpectTheProductCDToBeAddedWithTheRightAmountAndTheProduct()"
 });
 formatter.result({
-  "duration": 72755151,
+  "duration": 71363103,
   "status": "passed"
 });
 formatter.after({
-  "duration": 231637436,
+  "duration": 136262662,
   "status": "passed"
 });
 });
