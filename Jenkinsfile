@@ -8,13 +8,11 @@ pipeline {
    stages {
         stage('Build') {
             steps{
-                step {
-                    sh '''
-                        mvn clean install
-                    '''
-                    junit '**/target/surefire-reports/TEST-*.xml'
-                    archiveArtifacts 'target/*.jar'
-                }
+                sh '''
+                    mvn clean install
+                '''
+                junit '**/target/surefire-reports/TEST-*.xml'
+                archiveArtifacts 'target/*.jar'
             }
         }
     }
