@@ -6,8 +6,7 @@ node {
 }
 pipeline {
    agent any
-    stages {
-        stage('Preparation') { // for display purposes
+    stage('Preparation') { // for display purposes
       git '/home/egraaf/Develop/Alten/SeleniumBDD/.git'
       mvnHome = tool 'M3'
    }
@@ -21,5 +20,5 @@ pipeline {
       junit '**/target/surefire-reports/TEST-*.xml'
       archiveArtifacts 'target/*.jar'
    }
-    }
+    
 }
