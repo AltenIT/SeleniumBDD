@@ -7,13 +7,12 @@ node {
 pipeline {
    agent any
    stages {
-        stage('Preparation') { // for display purposes
-            mvnHome = tool 'M3'
-        }
         stage('Build') {
             // Run the maven build
             withEnv(["MVN_HOME=$mvnHome"]) {
-            sh '"$MVN_HOME/bin/mvn" -Dmaven.test.failure.ignore clean install'
+            sh '''
+                 mvn clean install
+            '''
             }
         }
         stage('Results') {
