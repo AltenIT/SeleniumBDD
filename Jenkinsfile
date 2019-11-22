@@ -8,7 +8,6 @@ pipeline {
    agent any
    stages {
         stage('Preparation') { // for display purposes
-            git '/home/egraaf/Develop/Alten/SeleniumBDD/.git'
             mvnHome = tool 'M3'
         }
         stage('Build') {
