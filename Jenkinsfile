@@ -7,19 +7,15 @@ pipeline {
    agent any
    stages {
         stage('Build') {
-        steps{
-        step{
-            sh '''
-                mvn clean install
-            '''
+            steps{
+                step {
+                    sh '''
+                        mvn clean install
+                    '''
+                    junit '**/target/surefire-reports/TEST-*.xml'
+                    archiveArtifacts 'target/*.jar'
+                }
+            }
         }
-        step {
-            junit '**/target/surefire-reports/TEST-*.xml'
-            archiveArtifacts 'target/*.jar'
-        }
-        }
-        }
-
-        
     }
 }
