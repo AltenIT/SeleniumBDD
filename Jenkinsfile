@@ -13,11 +13,13 @@ pipeline {
                 mvn clean install
             '''
         }
-        }
-        }
-        stage('Results') {
+        step {
             junit '**/target/surefire-reports/TEST-*.xml'
             archiveArtifacts 'target/*.jar'
         }
+        }
+        }
+
+        
     }
 }
