@@ -9,11 +9,11 @@ pipeline {
    stages {
         stage('Build') {
             // Run the maven build
-            withEnv(["MVN_HOME=$mvnHome"]) {
+            
             sh '''
                  mvn clean install
             '''
-            }
+            
         }
         stage('Results') {
             junit '**/target/surefire-reports/TEST-*.xml'
