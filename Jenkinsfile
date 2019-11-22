@@ -4,22 +4,16 @@ node {
     checkout scm
 }
 pipeline {
-    agent any
-
+   agent any
     stages {
-        stage('Build') {
-            steps {
-                echo 'Building..'
-            }
-        }
         stage('Test') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                         
+                // Call test suite from using SoapUI testrunner.sh (modified version for JAVA 8)
+                sh '''
+                    echo ">> Hello World"
+                
+                '''
             }
         }
     }
